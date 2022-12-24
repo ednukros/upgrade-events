@@ -21,3 +21,14 @@ inputOne$$.addEventListener("focus", focusMe);
 
 
 // 1.3 Añade un evento 'input' que ejecute un console.log con el valor del input
+
+const inputValue$$ = document.querySelector(".value");
+
+function inputValue(){
+
+    const textTwo$$ = inputValue$$.value;
+    console.log(textTwo$$);
+
+}
+
+inputValue$$.addEventListener("input", inputValue);
